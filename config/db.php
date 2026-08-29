@@ -1,10 +1,10 @@
 <?php
 function OuvrirBase()
 {
-    $host = "VOTRE_HOST_TIDB";      // Exemple: gateway01.ap-southeast-1.prod.aws.tidbcloud.com
-    $user = "VOTRE_USER_TIDB";      // Exemple: XXXXX.root
-    $pass = "VOTRE_MOT_DE_PASSE";
-    $dbname = "test";               // Nom par défaut ou celui créé dans TiDB
+    $host = "gateway01.ap-southeast-1.prod.aws.tidbcloud.com";      // Exemple: gateway01.ap-southeast-1.prod.aws.tidbcloud.com
+    $user = "bySeK84j6r5z3iE.root";      // Exemple: XXXXX.root
+    $pass = "";
+    $dbname = "sys";               // Nom par défaut ou celui créé dans TiDB
     $port = 4000;                   // Port TiDB (par défaut 4000)
 
     $lien = mysqli_init();
