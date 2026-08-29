@@ -35,17 +35,17 @@ require("config/header.php");
 <h4 class="mb-3">Tableau de bord</h4>
 <div class="row g-3 mb-5">
     <div class="col-md-3">
-        <div class="card text-white h-100" style="background-color: #1a3c5e;">
-            <div class="card-body text-center">
-                <i class="bi bi-signpost-2" style="font-size: 2rem;"></i>
-                <h2 class="mt-2"><?php echo $nbItineraires; ?></h2>
-                <p class="mb-0">Itinéraires</p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="itineraire/liste.php" class="text-white">Voir la liste →</a>
-            </div>
+    <div class="card text-white h-100" style="background-color: #1a3c5e;">
+        <div class="card-body text-center">
+            <i class="bi bi-signpost-2" style="font-size: 2rem;"></i>
+            <h2 class="mt-2 text-white"><?php echo $nbItineraires; ?></h2>
+            <p class="mb-0">Itinéraires</p>
+        </div>
+        <div class="card-footer text-center">
+            <a href="itineraire/liste.php" class="text-white">Voir la liste →</a>
         </div>
     </div>
+</div>
     <div class="col-md-3">
         <div class="card text-white h-100" style="background-color: #2e6da4;">
             <div class="card-body text-center">
