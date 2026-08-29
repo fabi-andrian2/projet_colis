@@ -1,11 +1,11 @@
 <?php
 function OuvrirBase()
 {
-    $host = getenv('DB_HOST') ?: 'localhost';
-    $user = getenv('DB_USER') ?: 'root';
-    $pass = getenv('DB_PASS') ?: '';
-    $dbname = getenv('DB_NAME') ?: 'colis_db';
-    $port = getenv('DB_PORT') ?: 3306;
+    $host = $_ENV['DB_HOST'] ?? getenv('DB_HOST') ?: 'localhost';
+    $user = $_ENV['DB_USER'] ?? getenv('DB_USER') ?: 'root';
+    $pass = $_ENV['DB_PASS'] ?? getenv('DB_PASS') ?: '';
+    $dbname = $_ENV['DB_NAME'] ?? getenv('DB_NAME') ?: 'colis_db';
+    $port = $_ENV['DB_PORT'] ?? getenv('DB_PORT') ?: 3306;
 
     $lien = mysqli_connect($host, $user, $pass, $dbname, (int)$port);
     if (!$lien)
